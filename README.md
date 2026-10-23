@@ -3,6 +3,7 @@ discordbotを作成するツールです。そして作成例です
 
 ## 使用しているモジュール
 |No.|モジュール名|
+|-|-|
 |1|py-cord|
 |2|python-dotenv|
 |3|sympy|
