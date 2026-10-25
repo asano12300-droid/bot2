@@ -1,0 +1,6 @@
+py-cord
+python-dotenv
+sympy
+matplotlib
+requests
+deep_translator
