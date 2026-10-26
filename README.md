@@ -1,6 +1,11 @@
 # bot2
 discordbotを作成するツールです。そして作成例です
 
+## 使用条件
+os: linux
+destribution: ubuntu, debian
+仮想環境: uv (現在、debianで公開されていないpython3.15を使用しているため)
+
 ## 使い方
 1.クローンしてください
 ```
