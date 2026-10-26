@@ -1,0 +1,5 @@
+#!/bin/bash
+
+user=$(whoami)
+nano /home/$user/commands/$1
+sudo chmod +x /home/$user/commands/$1
