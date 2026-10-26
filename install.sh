@@ -6,6 +6,7 @@ user=$(whoami)
 # 必要なディレクトリの作成
 mkdir -p /home/$user/discord
 pip install -r requirements.txt
+sudo cp -r plugins/ /home/$user/discord/
 
 # 1から2までループ
 for i in 1 2; do
