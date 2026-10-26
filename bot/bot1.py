@@ -13,11 +13,6 @@ name2 = plugins.groups(bot,name="quiz", description="クイズ集です")
 @bot.event
 async def on_ready():
     print(f"ログインしました: {bot.user}")
-#    for _, module_name, _ in pkgutil.iter_modules(plugins.__path__):
-#        full_name = f"plugins.{module_name}"
-#        importlib.import_module(full_name)
-#        print(f"[LOAD] {full_name}: SUCCESS")
-#    print("[LOAD] FINISHED")
     update_status.start()
 
 @tasks.loop(seconds=10)
@@ -36,13 +31,7 @@ async def on_message(message: discord.Message):
     if message.author == bot.user: return
     if message.content == "挨拶して":
         await message.channel.send(f"{message.author.mention}、こんにちは")
-    if message.content == "!cleanup":
-        if message.author.guild_permissions.administrator:
-            await message.channel.purge()
-            await message.channel.send("$B?P0l$D$b;D$i$J$$$M(B")
-        else:
-            await message.channel.send("$B2?MM$N$D$b$j!)(B")
-
+        
 @bot.slash_command(name="help", description="Botの使い方")
 async def help_command(ctx: discord.ApplicationContext):
     embed, view = plugins.help()
