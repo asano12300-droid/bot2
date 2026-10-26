@@ -7,6 +7,9 @@ user=$(whoami)
 mkdir -p /home/$user/discord
 pip install -r requirements.txt
 sudo cp -r plugins/ /home/$user/discord/
+sudo cp -r commands/ /home/$user/
+sudo echo "export PATH:/home/$user/commands/" >> /home/$user/.bashrc
+source ~/.bashrc
 
 # 1から2までループ
 for i in 1 2; do
