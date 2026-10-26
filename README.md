@@ -1,7 +1,22 @@
 # bot2
 discordbotを作成するツールです。そして作成例です
 
+## 使い方
+1.クローンしてください
+```
+git clone https://github.com/asano12300-droid/bot2/commits/{version}
+```
+2.クローンしたフォルダーに入ります
+```
+cd bot2
+```
+3.`install.sh`を起動させます
+```
+sh install.sh
+```
+
 ## 使用しているモジュール
+使用しているモジュールは13個です。
 ### 1.外部モジュール
 |No.|モジュール名|必須|
 |-|-|-|
